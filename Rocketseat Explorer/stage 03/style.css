@@ -1,6 +1,16 @@
-body{
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body, input, button, select, textarea{
     font-family: 'Poppins', sans-serif;
-    background: #e5e5e5;
+}
+
+body{
+    background: #d9d9d9;
 }
 
 body::before{
@@ -31,6 +41,7 @@ header h1{
     font-weight: bold;
     font-size: 36px;
     line-height: 42px;
+    margin-bottom: 24px;
     color: white;
 }
 
@@ -42,7 +53,7 @@ header p{
 
 form{
     margin-top: 38px;
-    background: #d9d9d9;
+    background: white;
     min-height: 300px;
     border-radius: 8px 8px 0px 0px;
     
@@ -51,6 +62,12 @@ form{
 
 fieldset{
     border: none;
+}
+
+.fieldset-wrapper{
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
 }
 
 fieldset legend{
@@ -62,4 +79,49 @@ fieldset legend{
     
     border-bottom: 1px solid #E6E6F0; 
     width: 100%;
+}
+
+.input-wrapper{
+    display: flex;
+    flex-direction: column;
+}
+
+.input-wrapper label{
+    font-size: 14px;
+    line-height: 24px;
+    margin-bottom: 8px;
+    color: #4e4958;
+}
+
+.input-wrapper label span{
+    margin-left: 12px;
+    font-size: 12px;
+    line-height: 20px;
+    color: #6a696d;
+}
+
+.input-wrapper input, .input-wrapper textarea, .input-wrapper select{
+    background: #fafafc;
+    border: 1px solid #E6E6F0;
+    border-radius: 8px;
+    height: 56px;
+    padding: 0 24px;
+    font-size: 16px;
+    line-height: 26px;
+    color: #6a696d;
+}
+
+.input-wrapper textarea{
+    padding: 0px;
+    height: 168px;
+}
+
+.input-wrapper select{
+    appearance: none;
+    -webkit-appearance: none;
+    
+    background-image: url("data:image/svg+xml,%3Csvg width='24' height='24' viewBox='0 0 24 24' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M8 10L12 14L16 10' stroke='%239C98A6' stroke-width='1.5' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E%0A");
+    
+    background-repeat: no-repeat;
+    background-position: right 24px top 50%;
 }
