@@ -205,3 +205,8 @@ footer .button:hover{
 input:invalid{
     border: 2px solid #FF1010;
 }
+
+.dev-alisson{
+    text-align: center;
+    margin-bottom: 15px;
+}
