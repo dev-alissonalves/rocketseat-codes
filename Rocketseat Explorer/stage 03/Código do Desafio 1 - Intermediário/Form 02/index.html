@@ -1,62 +1,97 @@
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Código do Desafio 01 - Intermediário</title>
+    
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&family=Staatliches&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
+    <div class="page">
+        <div class="cabecalho">
+            <h1>AVALIE A SUA MENTORIA</h1>
+            <p>Chegou a hora de avaliar o seu mentor, Bora lá?</p>
+            <img src="images/img1.png" alt="Imagem logo da página. A logo tem um formato de balão comunicativo com 5 estrelas em seu interior, 3 preenchidas na cor branca e outras sem preenchimento interno na cor cinza.">
+        </div>
+    
+        <header>
+            <p><span>INFORMAÇÕES PESSOAIS</span></p>
+        </header>
+    
+        <form>
+            <div class="fieldset-separador">
+                <fieldset>
+                    <div class="col-2">
+                        <div class="input-separador">
+                            <label for="info-nome">Nome</label>
+                            <input type="text" id="info-nome">
+                        </div>
+                        
+                        <div class="input-separador">
+                            <label for="info-sobrenome">Sobrenome</label>
+                            <input type="text" id="info-sobrenome">
+                        </div>
+                    </div>
+                    
+                    <div class="input-separador">
+                        <label for="info-email">Email <span>(digite um email válido)</span></label>
+                        <input type="text" id="info-email">
+                    </div>
 
-    <div class="cabecalho">
-        <h1>AVALIE A SUA MENTORIA</h1>
-        <p>Chegou a hora de avaliar o seu mentor, Bora lá?</p>
-        <img src="images/img1.png" alt="Imagem logo da página. A logo tem um formato de balão comunicativo com 5 estrelas em seu interior, 3 preenchidas na cor branca e outras sem preenchimento interno na cor cinza.">
-    </div>
-
-    <header>
-        <p><span>INFORMAÇÕES PESSOAIS</span></p>
-    </header>
-
-    <form action="">
+                </fieldset>
+            
+                <fieldset>
+                    <legend>INFORMAÇÕES DO MENTOR</legend>
         
-        <fieldset>
-            <label for="info-nome">Nome</label>
-            <input type="text" id="info-nome">
-
-            <label for="info-sobrenome">Sobrenome</label>
-            <input type="text" id="info-sobrenome">
-
-            <label for="info-email">Email <span>(digite um email válido)</span></label>
-            <input type="text" id="info-email">
-        </fieldset>
-
-        <fieldset>
-            <legend>INFORMAÇÕES DO MENTOR</legend>
-
-            <label for="info-mentor">Selecione quem foi o seu mentor</label>
-            <input type="text" id="info-mentor">
-
-            <label for="info-text-area">Feedback sobre o mentor</label>
-            <textarea name="" id="info-text-area" cols="30" rows="10"></textarea>
-        </fieldset>
-
-        <input type="checkbox" name="" id="info-checkbox">
-        <label for="info-checkbox">Todas as minhas dúvidas foram esclarecidas durante a mentoria.</label>
-
-        <fieldset>
-            <legend>AGENDANDO PRÓXIMA MENTORIA</legend>
-
-            <label for="info-date">Data <span>(DD/MM/AAAA)</span></label>
-            <input type="date" name="" id="info-date">
-
-            <label for="info-time-begin">Das</label>
-            <input type="time" name="" id="info-time-begin">
-
-            <label for="info-time-end">Das</label>
-            <input type="time" name="" id="info-time-end">
-        </fieldset>
-
-        <button>SALVAR</button>
-    </form>
+                    <div class="col-2">
+                        <div class="input-separador">
+                            <label for="info-mentor">Selecione quem foi o seu mentor</label>
+                            <input type="text" id="info-mentor">
+                        </div>
+                    </div>
+                    
+                   
+                    <div class="input-separador">
+                        <label for="info-text-area">Feedback sobre o mentor</label>
+                    <textarea name="" id="info-text-area" cols="30" rows="10"></textarea>
+                    </div>
+                    
+                    <div class="checkbox-separador">
+                        <input type="checkbox" name="" id="info-checkbox">
+                    <label for="info-checkbox">Todas as minhas dúvidas foram esclarecidas durante a mentoria.</label>
+                    </div>
+                    
+                </fieldset>
+    
+                <fieldset>
+                    <legend>AGENDANDO PRÓXIMA MENTORIA</legend>
+        
+                    <div class="col-3">
+                        <div class="input-separador">
+                            <label for="info-date">Data <span>(DD/MM/AAAA)</span></label>
+                            <input type="date" name="" id="info-date">
+                        </div>
+                        
+                        <div class="input-separador">
+                            <label for="info-time-begin">Das</label>
+                            <input type="time" name="" id="info-time-begin">
+                        </div>
+                        
+                        <div class="input-separador">
+                            <label for="info-time-end">Das</label>
+                            <input type="time" name="" id="info-time-end">
+                        </div> 
+                    </div>  
+                </fieldset>
+            </div>
+            <button>SALVAR</button>
+        </form>
+    </div>
 </body>
 </html>
