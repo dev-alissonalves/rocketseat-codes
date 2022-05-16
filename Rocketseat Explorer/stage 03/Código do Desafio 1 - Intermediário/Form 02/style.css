@@ -124,6 +124,10 @@ fieldset legend{
     gap: 1rem;
 }
 
+input:invalid{
+    border: 1px solid red;
+}
+
 .checkbox-separador label{
     margin: 0;
 }
@@ -161,4 +165,8 @@ button{
     margin-top: 6.2rem;
     background: #F67669;
     border-radius: 8px;
+}
+
+button:hover{
+    background: #db685b;
 }
