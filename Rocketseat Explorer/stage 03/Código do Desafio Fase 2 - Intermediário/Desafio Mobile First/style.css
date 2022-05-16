@@ -10,13 +10,13 @@
 
 body{
     font-size: 1.6rem;
-    background: #EFF1FF;
+    background: #E5E5E5;
 }
 
 .page{
     margin: auto;
     text-align: center;
-    width: 40rem;
+    width: 45rem;
 }
 
 .page header{
@@ -41,10 +41,14 @@ header h1{
     background: #CBC0D3;
 }
 
-body p{
+main{
+    background: #EFF1FF;
+    padding: 2rem 5.5rem;
+}
+
+main p{
     font-family: 'Palanquin';
     font-size: 1.5rem;    
-    line-height: 2rem;
+    line-height: 1.5rem;
     color: #23053A;
-    margin: 2rem auto 6.3rem;
 }
