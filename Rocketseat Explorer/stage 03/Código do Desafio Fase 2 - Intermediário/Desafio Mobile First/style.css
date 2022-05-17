@@ -51,4 +51,37 @@ main p{
     font-size: 1.5rem;    
     line-height: 1.5rem;
     color: #23053A;
+    margin-bottom: 6rem;
+}
+
+.separador-card{
+    display: flex;
+    flex-direction: column;
+    gap: 3.6rem;
+}
+
+.card{
+    position: relative;
+}
+
+.card img{
+    object-fit: cover;
+}
+
+.card h2{
+    position: absolute;
+    top: 2rem;
+    right: 3rem;
+    padding: 0 2rem;
+}
+
+main h2{
+    font-family: 'Staatliches';
+    font-size: 2rem;
+    line-height: 3.4rem;
+    letter-spacing: 0.05em;
+    color: #4A4E69;
+
+    background: #FEEAFA;
+    border-radius: 2rem;
 }
