@@ -22,6 +22,7 @@ body{
     height: 100vh;
     width: 45rem;
     background: #8E9AAF;
+    min-height: max-content;
 
     animation-name: topdown;
     animation-duration: 3000ms;
@@ -34,12 +35,12 @@ body{
 
 .lateral-info h1{
     font-family: 'Staatliches';
-    font-size: 4rem;
+    font-size: 5rem;
     line-height: 3.5rem;
     letter-spacing: 0.05em;
     text-shadow: 0px 2px 2px rgba(0, 0, 0, 0.25);
 
-    padding: 1rem 8rem 0.5rem 8rem;
+    padding: 2rem 8rem 2rem 8rem;
     color: #FFFFFF;
     background: #CBC0D3;
 }
@@ -56,7 +57,6 @@ body{
 
 .content-main{
     margin: auto;
-
     animation-name: downtop;
     animation-duration: 3000ms;
 }
