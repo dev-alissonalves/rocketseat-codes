@@ -28,11 +28,14 @@ nav{
     display: flex;
     justify-content: space-between;
     background-color: var(--primary-bg);
-
     font-weight: 400;
-    font-size: 2rem;
+    font-size: 1.8rem;
     line-height: 2.4rem;
-    padding: 2rem 4rem;
+    padding: 2rem 6rem;
+}
+
+nav p {
+    font-size: 2.5rem;
 }
 
 span{
@@ -56,3 +59,46 @@ nav li{
 h1, h2, strong{
     color: var(--headind-color);
 }
+
+section .intro-wrapper,
+section .about-content{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 5rem;
+}
+
+.intro-text p{
+    font-size: 3rem;
+    margin-bottom: 1.5rem;
+}
+
+.intro-text h1{
+    font-size: 6rem;
+    margin-bottom: 1rem;
+}
+
+.intro-text h3{
+    font-size: 2.5rem;
+    font-weight: 400;
+    margin-bottom: 5rem;
+}
+
+.intro-buttons button{
+    width: 22rem;
+    height: 6rem;
+    background-color: transparent;
+    border: solid;
+    color: hsla(0, 0%, 96%, 1);
+    border-radius: 5px;
+    font-family: 'Fira Sans';
+    font-size: 2.4rem;
+    line-height: 2.9rem;
+}
+
+.intro-buttons button:nth-child(1){
+    border: none; 
+    margin-right: 3rem;
+    background-color: hsla(220, 78%, 57%, 1);
+    color: hsla(0, 0%, 96%, 1);
+ }
