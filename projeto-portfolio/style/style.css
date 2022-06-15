@@ -84,6 +84,10 @@ section .about-content{
     margin-bottom: 5rem;
 }
 
+.about-text h2{
+    font-size: 4rem;
+ }
+
 .intro-buttons button{
     width: 22rem;
     height: 6rem;
@@ -101,4 +105,39 @@ section .about-content{
     margin-right: 3rem;
     background-color: hsla(220, 78%, 57%, 1);
     color: hsla(0, 0%, 96%, 1);
+ }
+
+
+ .projects{
+    padding: 7rem;
+    text-align: center;
+ }
+
+ .projects h2{
+    font-size: 4rem;
+ }
+
+ .card-wrapper{
+    display: flex;
+    gap: 3rem;
+    margin-top: 5.2rem;
+ }
+
+ .cards{
+    padding: 4rem 2.5rem;
+    background-color: #292929;  
+ }
+
+ .cards img{
+    width: 40rem;
+    border-radius: 5px;
+    margin-bottom: 2.5rem;
+ }
+
+ .cards p{
+    text-align: left;
+    font-family: 'Fira Sans', sans-serif;
+    font-weight: 500;
+    font-size: 2rem;
+    margin-bottom: 3.4rem;
  }
