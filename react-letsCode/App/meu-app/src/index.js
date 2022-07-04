@@ -1,14 +1,18 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
-import App from './components/App';
-import App2 from './components/App2';
-import App3 from './components/App3';
+//import App from './components/App';
+//import App2 from './components/App2';
+//import App3 from './components/App3';
+//import App4 from './components/App4';
+//import App5 from './components/App5';
+//import Lista from './components/Lista';
+import Lista02 from './components/Lista02';
 import reportWebVitals from './reportWebVitals';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    <App3 
+    <Lista02 
     
     />
   </React.StrictMode>
