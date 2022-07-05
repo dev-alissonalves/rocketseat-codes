@@ -8,15 +8,17 @@ import ReactDOM from 'react-dom/client';
 //import Lista from './components/Lista';
 //import Lista02 from './components/Lista02';
 //import { Lista03, Item} from './components/Lista03';
-import FormularioReact from './components/FormularioReact';
+//import FormularioReact from './components/FormularioReact';
+//import Hello from './components/helloHooks';
+import AppHooks from './components/useStates';
 import reportWebVitals from './reportWebVitals';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    <FormularioReact>
-
-    </FormularioReact>
+    <AppHooks text = "Olá Mundo!">
+      <h1>Olá, Mundo!</h1>
+    </AppHooks>
   </React.StrictMode>
 );
 
