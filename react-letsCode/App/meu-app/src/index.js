@@ -10,14 +10,14 @@ import ReactDOM from 'react-dom/client';
 //import { Lista03, Item} from './components/Lista03';
 //import FormularioReact from './components/FormularioReact';
 //import Hello from './components/helloHooks';
-import AppHooks from './components/useStates';
+//import AppHooks from './components/useStates';
+import AppHooks from './components/useEffects';
 import reportWebVitals from './reportWebVitals';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    <AppHooks text = "Olá Mundo!">
-      <h1>Olá, Mundo!</h1>
+    <AppHooks>
     </AppHooks>
   </React.StrictMode>
 );
