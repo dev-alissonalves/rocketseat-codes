@@ -18,10 +18,27 @@ const animals =
 console.log(animals) // Para imprimir todos os elementos dentro do Array
 console.log(animals[0]) // Para imprimir elementos individuais utilizamos o índice como referência
 
-//para adicionar valores aos Arrays utilizamos a função push()
+//para adicionar valores ao final do Arrays utilizamos a função push()
 animals.push('DOG')
 console.log(animals)
 
-//para remover valores aos Arrays utilizamos a função pop()
+//para adicionar valores no início do Arrays utilizamos a função unshift()
+animals.unshift('PAPAGAIO')
+console.log(animals)
+
+//para remover valores do final do Arrays utilizamos a função pop()
 animals.pop()
 console.log(animals)
+
+//para remover valores do início do Array utilizamos a função shift()
+animals.shift()
+console.log(animals)
+
+//para exibir somente alguns elemetos do Array utilizamos a função slice()
+console.log(animals.slice(1, 3)) //Ele vai exibir o elemento 1 e 2 do array
+
+//para remover elementos em qualquer local do Array utilizamos a função splice()
+console.log(animals.splice(1, 2)) //Primeiro argumento é a posição e o segundo a quantidade de elementos que quero remover a partir daquela posição
+
+//Para buscar elementos em um array 
+let pos = animals.indexOf('LION')
