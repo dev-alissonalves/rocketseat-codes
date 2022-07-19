@@ -19,7 +19,7 @@ export default function AppHooks(){
             Nome: <input type="text" value={nome} onChange={(event) => {setNome(event.target.value)}}></input>
 
             <br />
-            Olá, {nome}
+            <p id="estilo-p">Olá, {nome}</p>
         </>
     );
 }

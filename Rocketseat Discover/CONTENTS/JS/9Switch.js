@@ -5,10 +5,10 @@
 
     EXEMPLO ABAIXO UTILIZANDO SWITCH: 
 */
-let option = 'ç'
+let nome = 'Álisson'
 
 switch(option){
-    case 'a':
+    case 'álisson':
         console.log('Escolhi a opção A')
         break
     case 'b':
@@ -23,3 +23,12 @@ switch(option){
         console.log('N/D')
 }
 
+
+
+/*
+    CRIEM UMA AGENDA TELEFÔNICA COM 10 CONTATOS, E RECEBA O VALOR DE UM NOME PELO USUÁRIO UTILIZANDO O PROMPT 
+
+    AGENDA TELEFÔNICA DEVERÁ SER CONSTRUÍDA UTILIZANDO SWITCH
+
+    CADA CASE SERÃO UM NOMES NA AGENDA TELEFÔNICA...
+*/
