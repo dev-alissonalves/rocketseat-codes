@@ -18,7 +18,7 @@ export function Home() {
             }),
         };
 
-        setStudents([newStudent])
+        setStudents(prevState => [...prevState, newStudent])
     }
 
     return (
