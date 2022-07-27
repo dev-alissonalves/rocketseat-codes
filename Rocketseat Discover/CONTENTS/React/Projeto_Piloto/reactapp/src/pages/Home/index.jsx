@@ -24,7 +24,16 @@ export function Home() {
     return (
         <div className="container">
 
-            <h1>Lista de Presença  ReactApp</h1>
+            <header>
+
+                <h1>Lista de Presença  ReactApp</h1>
+                <div>
+                    <strong>Álisson Alves</strong>
+                    <img src="https://github.com/dev-alissonalves.png" alt="Imagem de Álisson no GitHub" />
+                </div>
+                
+            </header>
+
 
             <input
                 type="text"
@@ -32,16 +41,20 @@ export function Home() {
                 onChange={e => setStudentName(e.target.value)}
             />
 
-            <button 
+            <button
                 type="button"
-                onClick = { handleAddStudent }> 
+                onClick={handleAddStudent}>
                 Adicionar
             </button>
 
             {
-                students.map((student) => 
+                students.map((student) =>
                 (
-                    <Card name={student.name} time={student.time} />
+                    <Card
+                        key={student.time}
+                        name={student.name}
+                        time={student.time}
+                    />
                 ))
             }
 
