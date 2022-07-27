@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import './style.css';
 import { Card } from '../../components/Card'
 
@@ -7,6 +7,7 @@ export function Home() {
     //Estados
     const [studentName, setStudentName] = useState("");
     const [students, setStudents] = useState([]);
+    const [user, setUser] = useState ({ name: '', avatar: ''});
 
     function handleAddStudent() {
         const newStudent = {
@@ -21,17 +22,51 @@ export function Home() {
         setStudents(prevState => [...prevState, newStudent])
     }
 
+    /* 
+    OUTRA MANEIRA DE FAZER UTILIZANDO ASYNC AWAIT
+    
+
+    useEffect(() => {
+        async function fetchData()
+        {
+            const response = await fetch('https://api.github.com/users/dev-alissonalves')
+            const data = await response.json();
+            setUser({  
+                name: data.name,
+                avatar: data.avatar_url,
+            });
+        }
+
+        fetchData()
+        
+    },[]);
+        
+    */
+    useEffect(() => {
+        // Corpo do useEffect
+        fetch('https://api.github.com/users/dev-alissonalves')
+        .then(res => res.json())
+        .then(data => {
+            setUser({  
+                name: data.name,
+                avatar: data.avatar_url,
+             })
+        }) 
+
+    },[]);
+
     return (
         <div className="container">
 
             <header>
 
-                <h1>Lista de Presença  ReactApp</h1>
-                <div>
-                    <strong>Álisson Alves</strong>
-                    <img src="https://github.com/dev-alissonalves.png" alt="Imagem de Álisson no GitHub" />
-                </div>
+                <h1>Lista de Presença</h1>
                 
+                <div>
+                    <strong>{user.name}</strong>
+                    <img src={user.avatar} alt="Imagem de Álisson no GitHub" />
+                </div>
+
             </header>
 
 
