@@ -1,0 +1,99 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    font-size: 62.5%;
+}
+body{
+    padding: 3rem 2rem;
+}
+
+#main{
+    width: 100%;
+    margin: 0 auto;
+    background-color: rgba(149, 150, 151, 0.216);
+    
+    border-radius: 5px;
+    padding: 5rem 1rem;
+}
+
+#title{
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 6rem;
+    text-align: center;
+    margin-bottom: 3rem;
+}
+
+#description, #img-caption{
+    font-family: 'Monospace', sans-serif;
+    font-size: 1.5rem;
+    font-style: italic;
+    text-align: center;
+    margin-bottom: 3rem;
+}
+
+#img-div{
+    background-color: white;
+    margin: 0 1rem;
+    padding: 8rem 10rem 2rem 10rem;
+    text-align: center;
+}
+
+#image{
+    width: 1000px;
+    border-radius: 15px;
+}
+
+#img-caption{
+    margin: 2rem auto 0 auto;
+    width: 60%;
+}
+
+#tribute-title{
+    font-family: 'Monospace', sans-serif;
+    font-weight: bold;
+    text-align: center;
+    font-size: 2.5rem;
+    margin: 8rem 0;
+}
+
+#tribute-info{
+    width: 30%;
+    margin: 0 auto;
+}
+
+ul > li{
+    font-size: 2rem;
+    margin: 2rem 0;
+}
+
+li span{
+    font-weight: bold
+}
+
+li::before{
+    content: '#';
+}
+
+span::after{
+    content: ' - ';
+}
+
+#phrase-pio{
+    font-family: 'Monospace', sans-serif;
+    margin-top: 4rem;
+    text-align: center;
+    letter-spacing: 2px;
+    font-size: 1.5rem;
+}
+
+#link{
+    margin-top: 5rem;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    font-size: 1.5rem;
+    font-weight: bold
+}
