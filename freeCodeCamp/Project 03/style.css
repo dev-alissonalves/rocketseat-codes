@@ -1,0 +1,43 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    font-size: 62.5%;
+}
+
+@media(max-width: 1000px){
+    main{
+      display: flex;
+      flex-direction: row;
+    }
+  }
+
+main{
+    display: flex;
+}
+
+#navbar{
+    display: flex;
+    flex-direction: column;
+}
+.container{
+    height: 100vh;
+    border-left: solid 3px grey;
+    padding-left: 2.5rem;
+}
+
+#navbar header{
+    border-bottom: solid 1px grey;
+    padding: 10px 10px;
+    font-size: 3rem;
+}
+.nav-link{
+    text-decoration: none;
+    border-bottom: solid 1px grey;
+    padding: 15px 25px;
+    font-size: 1.8rem;
+    color: grey;
+}
