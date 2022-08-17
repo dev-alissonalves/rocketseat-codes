@@ -74,6 +74,7 @@ nav{
 }
 
 .container section{
+    margin-top: 1rem;
     display: block;
 }
 
@@ -81,6 +82,7 @@ nav{
     margin-bottom: 2rem;
 }
 .container header{
+    padding-top: 2rem;
     font-size: 3rem;
 }
 
