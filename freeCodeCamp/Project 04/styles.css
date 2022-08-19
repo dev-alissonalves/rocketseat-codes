@@ -38,7 +38,7 @@ main{
     display: flex;
     flex-direction: row;
     font-size: 2rem;
-    gap: 10rem;
+    gap: 8rem;
 }
 
 #nav-bar > ul > li{
@@ -48,10 +48,12 @@ main{
 #nav-bar a{
     text-decoration: none;
     color: black;
+    padding: 0.5rem 1rem;
+    border-radius: 5px;
 }
 
 #nav-bar a:hover{
-    font-weight: bolder;
+    background-color:  rgba(79, 78, 78, 0.315);
 }
 
 #title-page{
