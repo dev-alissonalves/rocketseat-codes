@@ -8,14 +8,25 @@
     font-size: 62.5%;
 }
 
-html{
+body{
     font-size: 16px;
+    background-color: #EEEEEE;
 }
 
-#header{
+header{
+    width: 100%;
+    position: fixed;
+    top: 0;
     display: flex;
+    gap: 75rem;
     align-items: center;
-    justify-content: space-between;
+    justify-content: space-around;
+    padding: 2.5rem 5rem;
+    background-color: #EEEEEE;
+}
+
+main{
+    margin-top: 10rem;
 }
 
 #header-img{
@@ -23,8 +34,166 @@ html{
 }
 
 #nav-bar > ul{
+    margin: 0 6rem;
     display: flex;
     flex-direction: row;
     font-size: 2rem;
     gap: 10rem;
+}
+
+#nav-bar > ul > li{
+    list-style: none;
+}
+
+#nav-bar a{
+    text-decoration: none;
+    color: black;
+}
+
+#nav-bar a:hover{
+    font-weight: bolder;
+}
+
+#title-page{
+    text-align: center;
+    margin-bottom: 2rem;
+    font-size: 4rem;
+}
+.form-container{
+    z-index: -1;
+    margin: 0 auto;
+    width: 300px;
+    text-align: center;
+}
+.form-container #form{
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+.form-container #form #email{
+    margin: 0 auto;
+    width: 100%;
+    padding: 8px;
+}
+
+.form-container #form #submit{
+    font-weight: bolder;
+    font-size: 2rem;
+    margin: 0 auto;
+    width: 60%;
+    padding: 5px;
+    margin-bottom: 8rem;
+    background-color: #FF8C00;
+    border: none;
+    border-radius: 5px;
+}
+
+#form #submit:hover{
+    background-color: #FF8C00;
+}
+div.container-info{
+    text-align: center;
+    margin: 0 40rem;
+}
+
+.info-group{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    gap: 5rem;
+    margin-bottom: 10rem;
+}
+
+.info-group #img-info{
+    width: 80px;
+}
+.info-group #text-info, #title-info{
+    text-align: left;
+}
+
+.info-group #text-info{
+    font-size: 1.9rem;
+}
+
+.info-group #text-info span{
+    font-size: 3rem;
+    font-weight: bold;
+}
+
+.info-video{
+    margin-bottom: 10rem;
+}
+
+.purchase-price{
+    display: flex;
+    gap: 1.8rem;
+}
+.purchase-price #individual-price{
+    width: 40rem;
+    height: 30rem;
+    background-color: #EEEEEE;
+    margin-bottom: 10rem;
+    border: solid 1px;
+}
+
+#individual-price p#title{
+    width: 100%;
+    background-color: #d8d5d5;
+    font-size: 1.8rem;
+    font-weight: bolder;
+    padding: 1rem 1rem;
+    margin-bottom: 1rem;
+}
+
+#individual-price p#price{
+    font-size: 3rem;
+    font-weight: bolder;
+    padding: 1rem;
+}
+
+#individual-price p#text{
+    letter-spacing: 3px;
+    line-height: 4rem;
+}
+
+#footer{
+    width: 100%;
+    height: 8rem;
+    background-color: #d8d5d5;
+    padding: 1.5rem 2rem;
+    color: rgb(79, 78, 78);
+}
+
+footer p{
+    margin-top: 1rem;
+    text-align: right;
+    font-size: 1.5rem;
+}
+
+footer a{
+    text-decoration: none;
+    color: rgb(79, 78, 78);
+}
+
+footer a:hover{
+    color: rgb(0, 0, 0);
+}
+
+
+#nav-link{
+    display: flex;
+    gap: 2rem;
+    justify-content: flex-end;
+}
+#nav-link li{
+    list-style: none;
+}
+
+#nav-link a{
+    text-decoration: none;
+    color: black;
+    font-size: 1.8rem;
+    font-weight: normal;
 }
