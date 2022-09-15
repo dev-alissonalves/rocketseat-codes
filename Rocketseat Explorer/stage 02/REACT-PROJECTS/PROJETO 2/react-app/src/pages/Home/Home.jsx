@@ -11,7 +11,7 @@ export function Home() {
       <div id="page">
 
         <header>
-          <img src={logo} alt="Logo do site Treine em Casa" />
+          <img id='logo' src={logo} alt="Logo do site Treine em Casa" />
           
           <nav>
             <ul>
