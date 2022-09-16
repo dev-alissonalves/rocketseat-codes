@@ -6,8 +6,10 @@
     EXEMPLO ABAIXO DE UMA FUNÇÃO SIMPLES:
 */
 
-function showName(nome){
-    console.log('Seja bem vindo, ao mundo das funções!')
+function showName(nomePrincipal){
+    let nomeCompleto = nomePrincipal + 'Alves';
+    return nomeCompleto;
 }
 
-showName()
+let nomePrincipal = prompt("Digite uma mensagem: ")
+document.write(showName(nomePrincipal))
