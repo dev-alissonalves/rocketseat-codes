@@ -111,6 +111,7 @@ fieldset{
 }
 
 .input-wrapper textarea{
+    padding: 2rem;
     height: 15rem;
 }
 
