@@ -14,7 +14,6 @@ export function Home() {
         <main>
           <form id='my-form'>
             <div id='fieldset-separator'>
-
               <fieldset>
                 <div className="fieldset-wrapper">
                   <legend>Informações do Evento</legend>
@@ -81,6 +80,7 @@ export function Home() {
                     <legend>Dia e hora</legend>
 
                     <div className="col-3">
+                      
                       <div className="input-wrapper">
                         <label htmlFor="info-date">Data</label>
                         <input type="date" id="info-date" required/>
