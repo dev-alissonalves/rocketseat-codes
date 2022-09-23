@@ -8,7 +8,7 @@ main{
     padding: 6rem 2rem;
     margin: 0 auto;
     max-width: 40rem;
-    opacity: 0.8;
+    opacity: 0.9;
 }
 
 main p:nth-child(1){
@@ -70,6 +70,9 @@ ul li span{
     color: #090039;
 }
 
+ul li + li{
+    margin-top: 3.2rem;
+}
 
 @media (min-width: 40rem) {
     main{
