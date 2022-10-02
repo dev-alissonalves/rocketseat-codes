@@ -2,21 +2,17 @@ body{
     background: #28293E;
     font-family: 'Epilogue', sans-serif;
 }
-#page{
+
+.page{
+    max-width: 35rem;
     margin: 0 auto;
     padding: 0 2rem;
-    max-width: 35rem;
-}
-
-main{
-    display: grid;
-    gap: 3rem;
-    margin-bottom: 10rem;
 }
 
 header{
     text-align: center;
     margin: 10rem 0 8rem;
+    animation: topdown 1s;
 }
 
 header p{
@@ -34,33 +30,35 @@ header h1{
     color: #FFFFFF;
 }
 
-.cards{
-    position: relative;
+main{
+    display: grid;
+    gap: 3rem;
+    margin-bottom: 10rem;
+
+    animation: downtop 1s;
 }
 
-.cards img{
-    height: 41.6rem;
-    object-fit: cover; /* Faz com que a imagem se posicione e ajuste dentro da caixa que ela está */
-    border-radius: 10px;
+.cards{
+    position: relative;
 }
 
 img{
     width: 100%;
 }
 
-.cards h2 span{
-    width: fit-content;
-    padding: 1rem 2rem;
-    font-weight: 400;
-    font-size: 1.6rem;
-    line-height: 3.2rem;
-    color: #090039;
-    background: white;
-    border-radius: 30px;
+.cards img{
+    height: 41.6rem;
+    object-fit: cover; /* Faz com que a imagem se posicione e ajuste dentro da caixa que ela está */
+    border-radius: 10px;
+    transition: all 500ms;
+}
+
+.cards img:hover{
+    transform: scale(1.1);
+    opacity: 0.5;
 }
 
 .cards h2{
-    
     display: flex;
     flex-direction: column;
     gap: 2rem;
@@ -75,3 +73,72 @@ img{
     color: #FFFFFF;
 }
 
+.cards h2 span{
+    width: fit-content;
+    height: 3.8rem;
+    padding: 0 1.6rem;
+    border-radius: 2rem;
+
+    font-weight: 400;
+    font-size: 1.6rem;
+    color: #090039;
+    background: white;
+
+    display: inline-flex;
+    align-items: center;
+}
+
+@media(min-width:900px){
+    
+    .page{
+        max-width: 140rem;
+        padding: 0 5rem;
+    }
+
+    main{
+        grid-template-areas: "A B B"
+        "C C D";
+    }
+
+    main > div:nth-child(1){
+        grid-area: A;
+    }
+    
+    main > div:nth-child(2){
+        grid-area: B;
+    }
+
+    main > div:nth-child(3){
+        grid-area: C;
+    }
+
+    main > div:nth-child(4){
+        grid-area: D;
+    }
+
+
+}
+
+@keyframes topdown{
+    0%{
+        opacity: 0;
+        transform: translateY(-40px);
+    }
+
+    100%{
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes downtop{
+    0%{
+        opacity: 0;
+        transform: translateY(40px);
+    }
+
+    100%{
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
