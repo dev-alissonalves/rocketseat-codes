@@ -6,7 +6,6 @@ body{
 .page{
     max-width: 35rem;
     margin: 0 auto;
-    padding: 0 2rem;
 }
 
 header{
@@ -44,6 +43,7 @@ main{
 
 img{
     width: 100%;
+    height: auto;
 }
 
 .cards img{
@@ -91,31 +91,28 @@ img{
 @media(min-width:900px){
     
     .page{
-        max-width: 140rem;
+        max-width: 117rem;
         padding: 0 5rem;
     }
-
     main{
-        grid-template-areas: "A B B"
-        "C C D";
+        grid-template-areas: "A B B" "C C D";
     }
 
-    main > div:nth-child(1){
+    main div:nth-child(1){
         grid-area: A;
     }
-    
-    main > div:nth-child(2){
+
+    main div:nth-child(2){
         grid-area: B;
     }
 
-    main > div:nth-child(3){
+    main div:nth-child(3){
         grid-area: C;
     }
 
-    main > div:nth-child(4){
+    main div:nth-child(4){
         grid-area: D;
     }
-
 
 }
 
