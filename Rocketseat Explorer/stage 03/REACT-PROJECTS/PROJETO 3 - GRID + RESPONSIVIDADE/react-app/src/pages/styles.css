@@ -10,7 +10,7 @@ body{
 
 header{
     text-align: center;
-    margin: 10rem 0 8rem;
+    margin: 5rem 0 5rem;
     animation: topdown 1s;
 }
 
@@ -24,7 +24,7 @@ header p{
 
 header h1{
     font-weight: 800;
-    font-size: 4rem;
+    font-size: clamp(2rem, 1rem + 5vh, 4rem);
     line-height: 4.8rem;
     color: #FFFFFF;
 }
@@ -33,7 +33,6 @@ main{
     display: grid;
     gap: 3rem;
     margin-bottom: 10rem;
-
     animation: downtop 1s;
 }
 
@@ -47,15 +46,16 @@ img{
 }
 
 .cards img{
-    height: 41.6rem;
+    height: 30rem;
     object-fit: cover; /* Faz com que a imagem se posicione e ajuste dentro da caixa que ela está */
     border-radius: 10px;
     transition: all 500ms;
 }
 
 .cards img:hover{
-    transform: scale(1.1);
-    opacity: 0.5;
+    transform: scale(1.06);
+    opacity: 0.7;
+    filter: blur(2px);
 }
 
 .cards h2{
@@ -64,8 +64,8 @@ img{
     gap: 2rem;
 
     position: absolute;
-    bottom: 3rem;
-    left: 3rem;
+    bottom: 5.2rem;
+    left: 2.8rem;
 
     font-weight: 800;
     font-size: 4rem;
@@ -86,34 +86,6 @@ img{
 
     display: inline-flex;
     align-items: center;
-}
-
-@media(min-width:900px){
-    
-    .page{
-        max-width: 117rem;
-        padding: 0 5rem;
-    }
-    main{
-        grid-template-areas: "A B B" "C C D";
-    }
-
-    main div:nth-child(1){
-        grid-area: A;
-    }
-
-    main div:nth-child(2){
-        grid-area: B;
-    }
-
-    main div:nth-child(3){
-        grid-area: C;
-    }
-
-    main div:nth-child(4){
-        grid-area: D;
-    }
-
 }
 
 @keyframes topdown{
@@ -139,3 +111,64 @@ img{
         transform: translateY(0);
     }
 }
+
+
+@media(min-width: 695px){
+
+    .page{
+        max-width: 90rem;
+        padding: 0 5rem;
+    }
+
+    main{
+        grid-template-areas: 
+        'A B' 
+        'C D';
+    }
+}
+
+@media(min-width:1025px){
+    
+    .page{
+        max-width: 117rem;
+        padding: 0 5rem;
+    }
+
+    header{
+        display: flex;
+        flex-direction: column;
+        gap: 2rem;
+    }
+
+    header p{
+        font-size: 2rem;
+    }
+    
+    header h1{
+        font-size: clamp(2rem, 1rem + 5vh, 5rem);
+    }
+
+    main{
+        grid-template-areas: 
+        'A B B' 
+        'C C D';
+    }
+
+    main div:nth-child(1){
+        grid-area: A;
+    }
+
+    main div:nth-child(2){
+        grid-area: B;
+    }
+
+    main div:nth-child(3){
+        grid-area: C;
+    }
+
+    main div:nth-child(4){
+        grid-area: D;
+    }
+
+}
+
