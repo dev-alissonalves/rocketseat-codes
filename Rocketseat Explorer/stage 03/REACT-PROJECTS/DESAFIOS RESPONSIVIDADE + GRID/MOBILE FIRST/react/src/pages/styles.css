@@ -47,14 +47,20 @@ main{
     padding: 1.4rem 3.2rem;
 }
 
-main p {
-    padding: 1rem;
+#text-info p{
+    padding: 4rem;
     font-family: 'Palanquin', sans-serif;
     font-style: normal;
     font-weight: 500;
     font-size: 1.4rem;
     line-height: 1.8rem;
     color: #23053A;
+}
+
+.card-group{
+    display: grid;
+    gap: 3rem;
+    margin-top: 23rem;
 }
 
 .card{
@@ -86,11 +92,6 @@ main p {
     letter-spacing: 0.05em;
     color: #4A4E69;
     animation: topdown 700ms 500ms backwards;
-}
-
-.card-group{
-    display: grid;
-    gap: 3.6rem;
 }
 
 footer p a{
@@ -143,5 +144,4 @@ a:hover{
         opacity: 1;
         transform: translateY(0);
     }
-    
 }

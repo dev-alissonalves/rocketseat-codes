@@ -17,11 +17,13 @@ export function App() {
             <h1>Space cream</h1>
           </div>
 
+          <div id='text-info'>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec a rhoncus leo. Donec at scelerisque magna. Nullam vitae neque sit amet erat dignissim cursus ac ac lectus. Aliquam erat volutpat. Praesent at quam aliquet, pharetra est in, sagittis lorem.elit. Donec a rhoncus leo. Donec at scelerisque magna. Nullam vitae neque sit amet erat dignissim cursus ac ac lectus. Aliquam erat volutpat. Praesent at quam aliquet, pharetra est in, sagittis lorem. </p>
+          </div>
+
         </header>
 
         <main>
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec a rhoncus leo. Donec at scelerisque magna. Nullam vitae neque sit amet erat dignissim cursus ac ac lectus. Aliquam erat volutpat. Praesent at quam aliquet, </p>
-
           <div className="card-group">
             <div className="card">
               <img src={milk1} alt="" />
@@ -46,9 +48,11 @@ export function App() {
           </div>
         </main>
 
+
+         {/*
         <footer>
           <p><a href="https://github.com/dev-alissonalves" target="_blank">@dev-alissonalves</a></p>
-        </footer>
+        </footer>*/}
       </div>
     </>
   )
