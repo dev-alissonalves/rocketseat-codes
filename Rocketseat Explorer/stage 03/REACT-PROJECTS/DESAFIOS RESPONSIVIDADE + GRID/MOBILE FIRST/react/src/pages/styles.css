@@ -8,6 +8,7 @@ body{
     margin: 0 auto;
     text-align: center;
     background: #EFF1FF;
+    padding-bottom: 2rem;
 }
 
 #page-mobile header{
@@ -44,7 +45,6 @@ main{
     flex-direction: column;
     gap: 5rem;
     padding: 1.4rem 3.2rem;
-    padding-bottom: 10rem;
 }
 
 main p {
@@ -60,11 +60,13 @@ main p {
 .card{
     position: relative;
     animation: downtop 1s;
+    transition: all 500ms
 }
 
 .card:hover{
     transform: scale(1.1);
-    transition: all 1s;
+    opacity: 0.8;
+    transition: all 500ms;
 }
 
 .card h2{
@@ -89,6 +91,19 @@ main p {
 .card-group{
     display: grid;
     gap: 3.6rem;
+}
+
+footer p a{
+    font-size: 1.5rem;
+    background: #8c52b6;
+    color: black;
+    padding: 1rem;
+    border-radius: 10px;
+    text-decoration: none;
+}
+
+a:hover{
+    background: #8847b7;
 }
 
 @keyframes rota{

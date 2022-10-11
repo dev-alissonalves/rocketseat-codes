@@ -45,6 +45,10 @@ export function App() {
             
           </div>
         </main>
+
+        <footer>
+          <p><a href="https://github.com/dev-alissonalves" target="_blank">@dev-alissonalves</a></p>
+        </footer>
       </div>
     </>
   )
