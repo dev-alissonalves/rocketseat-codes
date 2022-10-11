@@ -1,17 +1,23 @@
 body{
     font-family: 'Staatliches', cursive;
+    height: 100vh;
 }
 
 #page-mobile{
     max-width: 40rem;
-    height: 30rem;
     margin: 0 auto;
     text-align: center;
+    background: #EFF1FF;
+}
+
+#page-mobile header{
+    height: 31rem;
     background: #8E9AAF;
 }
 
 header img{
-    margin: 2rem 0 2.5rem;
+    margin: 3rem 0 3rem;
+    animation: rota 2s linear infinite;
 }
 
 header #title{
@@ -37,9 +43,8 @@ main{
     display: flex;
     flex-direction: column;
     gap: 5rem;
-    height: 100vh;
     padding: 1.4rem 3.2rem;
-    background: #dbdce9;
+    padding-bottom: 10rem;
 }
 
 main p {
@@ -54,10 +59,12 @@ main p {
 
 .card{
     position: relative;
+    animation: downtop 1s;
 }
 
 .card:hover{
     transform: scale(1.1);
+    transition: all 1s;
 }
 
 .card h2{
@@ -76,9 +83,50 @@ main p {
     line-height: 34px;
     letter-spacing: 0.05em;
     color: #4A4E69;
+    animation: topdown 700ms 500ms backwards;
 }
 
 .card-group{
     display: grid;
     gap: 3.6rem;
+}
+
+@keyframes rota{
+    0%{
+        transform: rotate(0);
+    }
+
+    50%{
+        transform: rotate(180deg);
+    }
+    
+    100%{
+        transform: rotate(360deg);
+    }
+}
+
+@keyframes topdown{
+    0%{
+        opacity: 0;
+        transform: translateY(-30px)
+    }
+
+    100%{
+        opacity: 1;
+        transform: translateY(0);
+    }
+    
+}
+
+@keyframes downtop{
+    0%{
+        opacity: 0;
+        transform: translateY(30px)
+    }
+
+    100%{
+        opacity: 1;
+        transform: translateY(0);
+    }
+    
 }
