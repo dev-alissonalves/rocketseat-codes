@@ -1,18 +1,17 @@
 body{
     font-family: 'Staatliches', cursive;
-    height: 100vh;
 }
 
 #page-mobile{
-    max-width: 40rem;
+    width: 43rem;
     margin: 0 auto;
+    padding-bottom: 5rem;
     text-align: center;
     background: #EFF1FF;
-    padding-bottom: 2rem;
 }
 
-#page-mobile header{
-    height: 31rem;
+header{
+    height: 33rem;
     background: #8E9AAF;
 }
 
@@ -21,18 +20,10 @@ header img{
     animation: rota 2s linear infinite;
 }
 
-header #title{
-    height: 5rem;
-    margin-bottom: 3rem;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+header h1{
+    margin-bottom: 3rem;    
     background: #CBC0D3;
     text-transform: uppercase;
-}
-
-#title h1{
-    font-style: normal;
     font-weight: 400;
     font-size: 40px;
     letter-spacing: 0.05em;
@@ -40,67 +31,57 @@ header #title{
     text-shadow: 0px 2px 2px rgba(0, 0, 0, 0.25);
 }
 
-main{
-    display: flex;
-    flex-direction: column;
-    gap: 5rem;
-    padding: 1.4rem 3.2rem;
-}
-
-#text-info p{
-    padding: 4rem;
+header p{
+    padding: 5rem 6rem;
     font-family: 'Palanquin', sans-serif;
     font-style: normal;
     font-weight: 500;
-    font-size: 1.4rem;
-    line-height: 1.8rem;
+    font-size: 1.5rem;
+    line-height: 2rem;
     color: #23053A;
 }
 
 .card-group{
-    display: grid;
+    display: flex;
+    flex-direction: column;
     gap: 3rem;
-    margin-top: 23rem;
+    margin-top: 20rem;
 }
 
 .card{
     position: relative;
-    animation: downtop 1s;
-    transition: all 500ms
+    margin: auto;
 }
 
-.card:hover{
+.card img{
+    width: 100%;
+    animation: downtop 800ms;
+    transition: all 350ms
+}
+
+.card img:hover{
     transform: scale(1.1);
     opacity: 0.8;
-    transition: all 500ms;
+    transition: all 350ms;
 }
 
 .card h2{
     position: absolute;
-    top: 0;
+    top: 1.5rem;
     right: 2.5rem;
-
-    width: fit-content;
-    padding: 0.1rem 2rem;
+    padding: 0.2rem 3rem;
     border-radius: 20px;
-    background: #FEEAFA;
 
     font-style: normal;
     font-weight: 400;
     font-size: 20px;
     line-height: 34px;
     letter-spacing: 0.05em;
-    color: #4A4E69;
-    animation: topdown 700ms 500ms backwards;
-}
 
-footer p a{
-    font-size: 1.5rem;
-    background: #8c52b6;
-    color: black;
-    padding: 1rem;
-    border-radius: 10px;
-    text-decoration: none;
+    color: #4A4E69;
+    background: #FEEAFA;
+    animation: topdown 500ms 500ms backwards;
+    
 }
 
 a:hover{
@@ -124,7 +105,7 @@ a:hover{
 @keyframes topdown{
     0%{
         opacity: 0;
-        transform: translateY(-30px)
+        transform: translateY(-15px)
     }
 
     100%{
@@ -137,7 +118,7 @@ a:hover{
 @keyframes downtop{
     0%{
         opacity: 0;
-        transform: translateY(30px)
+        transform: translateY(15px)
     }
 
     100%{

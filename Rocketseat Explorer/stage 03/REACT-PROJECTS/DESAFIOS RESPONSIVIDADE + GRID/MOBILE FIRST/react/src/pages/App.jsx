@@ -9,22 +9,21 @@ export function App() {
   return (
     <>
       <div id='page-mobile'>
+        
         <header>
 
           <img src={logo} alt="Logo da página" />
+          <h1>Space cream</h1>
 
-          <div id="title">
-            <h1>Space cream</h1>
-          </div>
-
-          <div id='text-info'>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec a rhoncus leo. Donec at scelerisque magna. Nullam vitae neque sit amet erat dignissim cursus ac ac lectus. Aliquam erat volutpat. Praesent at quam aliquet, pharetra est in, sagittis lorem.elit. Donec a rhoncus leo. Donec at scelerisque magna. Nullam vitae neque sit amet erat dignissim cursus ac ac lectus. Aliquam erat volutpat. Praesent at quam aliquet, pharetra est in, sagittis lorem. </p>
-          </div>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec a rhoncus leo. Donec at scelerisque magna. Nullam vitae neque sit amet erat dignissim cursus ac ac lectus.Nullam vitae neque sit amet erat dignissim cursus ac ac lectus.
+          </p>
 
         </header>
 
         <main>
           <div className="card-group">
+
             <div className="card">
               <img src={milk1} alt="" />
               <h2>PALETAS</h2>
@@ -44,16 +43,11 @@ export function App() {
               <img src={milk4} alt="" />
               <h2>PICOLÉS</h2>
             </div>
-            
+          
           </div>
         </main>
-
-
-         {/*
-        <footer>
-          <p><a href="https://github.com/dev-alissonalves" target="_blank">@dev-alissonalves</a></p>
-        </footer>*/}
       </div>
+      
     </>
   )
 }
