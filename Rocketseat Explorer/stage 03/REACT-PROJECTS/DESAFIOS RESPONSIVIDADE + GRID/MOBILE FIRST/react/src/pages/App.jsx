@@ -8,7 +8,7 @@ export function App() {
 
   return (
     <>
-      <div id='page-mobile'>
+      <div className='page-mobile'>
         
         <header>
 
@@ -16,7 +16,7 @@ export function App() {
           <h1>Space cream</h1>
 
           <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec a rhoncus leo. Donec at scelerisque magna. Nullam vitae neque sit amet erat dignissim cursus ac ac lectus.Nullam vitae neque sit amet erat dignissim cursus ac ac lectus.
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec a rhoncus leo. Donec at scelerisque magna. Nullam vitae neque sit amet erat dignissim cursus ac ac lectus. Aliquam erat volutpat. Praesent at quam aliquet, pharetra est in, sagittis lorem.elit. Donec a rhoncus leo. Donec at scelerisque magna. Nullam vitae neque sit amet erat dignissim cursus ac ac lectus. Aliquam erat volutpat. Praesent at quam aliquet, pharetra est in, sagittis lorem. 
           </p>
 
         </header>
@@ -44,7 +44,20 @@ export function App() {
               <h2>PICOLÉS</h2>
             </div>
           
+            <div className="card">
+              <img src={milk1} alt="" />
+              <h2>PALETAS</h2>
+            </div>
+
+            <div className="card">
+              <img src={milk4} alt="" />
+              <h2>PICOLÉS</h2>
+            </div>
+
           </div>
+          <footer>
+            <p>fale concosco no instagram <a href="#"><strong>@space_cream</strong></a></p>
+          </footer>
         </main>
       </div>
       

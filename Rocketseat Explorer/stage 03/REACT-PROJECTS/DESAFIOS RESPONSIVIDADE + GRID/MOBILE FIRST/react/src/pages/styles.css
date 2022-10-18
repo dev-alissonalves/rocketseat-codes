@@ -2,10 +2,9 @@ body{
     font-family: 'Staatliches', cursive;
 }
 
-#page-mobile{
-    width: 43rem;
+.page-mobile{
+    min-width: 460px;
     margin: 0 auto;
-    padding-bottom: 5rem;
     text-align: center;
     background: #EFF1FF;
 }
@@ -45,7 +44,7 @@ header p{
     display: flex;
     flex-direction: column;
     gap: 3rem;
-    margin-top: 20rem;
+    margin-top: 25rem;
 }
 
 .card{
@@ -84,9 +83,87 @@ header p{
     
 }
 
-a:hover{
-    background: #8847b7;
+footer{
+    padding: 2.3rem 0;
+    font-size: 2rem;
+    letter-spacing: 2px;
 }
+
+@media (min-width: 750px) {
+
+    .card-group{
+        margin-top: 15rem;
+        padding: 5rem;
+        display: grid;
+        justify-content: center;
+        grid-template-areas: 
+        'A B C'
+        'D B E'
+        'D F E';
+    }
+
+    .card-group .card:nth-child(1){
+        grid-area: A;
+    }
+
+    .card-group .card:nth-child(2){
+        grid-area: B;
+    }
+
+    .card-group .card:nth-child(3){
+        grid-area: C;
+    }
+
+    .card-group .card:nth-child(4){
+        grid-area: D;
+    }
+
+    .card-group .card:nth-child(5){
+        grid-area: F;
+    }
+
+    .card-group .card:nth-child(6){
+        grid-area: E;
+    }
+}
+
+@media(min-width: 1200px){
+    .page-mobile{
+        display: flex;
+        align-items: center;
+    }
+
+    .card-group{
+        margin: 0;
+        width: 70vw;
+        padding: 4rem 4rem;
+    }
+
+    main{
+        margin: 0 auto;
+    }
+    
+    header{
+        width: 25%;
+        height: 100vh;
+    }
+
+    header img{
+        padding: 1rem;
+    }
+
+    header p{
+        font-size: 1.8rem;
+        line-height: 30px;
+    }
+
+    main{
+        margin: 0;
+        padding: 0;
+        width: 70vw;
+    }
+}
+
 
 @keyframes rota{
     0%{
