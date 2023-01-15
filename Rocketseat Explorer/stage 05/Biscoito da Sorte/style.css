@@ -1,0 +1,89 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    font-size: 62.5%;
+}
+
+body{
+    font-size: 1.6rem;
+    background: linear-gradient(45deg, #190361 0%, #BB00FF 100%);
+    display: grid;
+    place-items: center;
+    height: 100vh;
+}
+
+main{
+    font-family: 'DM Sans', sans-serif;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+}
+
+.hide{
+    display: none;
+}
+
+/* SCREEN 01 */
+.screen1{
+    width: 45rem;
+    height: 45rem;
+    padding: 6rem;
+}
+
+.screen1, .screen2{
+    background: #FFFFFF;
+    box-shadow: 0px 20px 50px rgba(0, 0, 0, 0.8);
+    border-radius: 5px;
+}
+
+h1{
+    font-family: "Montserrat", sans-serif;
+    font-weight: 700;
+    line-height: 4rem;
+    margin-bottom: 2rem;
+}
+
+p{
+    font-weight: 400;
+    font-size: 1.5rem;
+    line-height: 3rem;
+    margin-bottom: 2rem;
+}
+
+/* SCREEN 02 */
+
+.screen2{
+    width: 45rem;
+    height: 60rem;
+    padding: 6rem;
+}
+
+#cookieMessage{
+    width: 33rem;
+    height: 13rem;
+    margin: 0 auto;
+    padding: 2rem;
+    background: #E4EDF1;
+    box-shadow: 2px 2px 2px rgba(85, 85, 85, 0.5);
+}
+
+#cookieMessage p{
+    font-family: 'Dancing Script', sans-serif;
+    font-size: 2.4rem;
+}
+
+.screen2 button{
+    color: #FFFFFF;
+    font-size: 1.5rem;
+    font-weight: 800;
+    width: 20rem;
+    margin-top: 1.5rem;
+    border: none;
+    padding: 18px;
+    background: #FF9500;
+    border-radius: 4px;
+}
