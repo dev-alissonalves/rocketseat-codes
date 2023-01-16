@@ -14,6 +14,8 @@ body{
     display: grid;
     place-items: center;
     height: 100vh;
+    animation: gradient 5s ease infinite;
+    background-size: 200% 200%;
 }
 
 main{
@@ -54,6 +56,11 @@ p{
     margin-bottom: 2rem;
 }
 
+#imgCookieClosed:hover{
+    cursor: pointer;
+    animation: driveCookie .2s linear infinite;
+}
+
 /* SCREEN 02 */
 
 .screen2{
@@ -63,15 +70,18 @@ p{
 }
 
 #cookieMessage{
-    width: 33rem;
-    height: 13rem;
+    display: flex;
+    align-items: center;
     margin: 0 auto;
-    padding: 2rem;
+    padding: 1.5rem;
     background: #E4EDF1;
     box-shadow: 2px 2px 2px rgba(85, 85, 85, 0.5);
+    animation: topdown 2s ease-in;
+    transition: all 3s;
 }
 
 #cookieMessage p{
+    margin: 0;
     font-family: 'Dancing Script', sans-serif;
     font-size: 2.4rem;
 }
@@ -86,4 +96,55 @@ p{
     padding: 18px;
     background: #FF9500;
     border-radius: 4px;
+}
+
+
+footer{
+    margin: 0;
+    color: #FF9500;
+    font-family: 'Dancing Script', sans-serif;
+    font-size: 5rem;
+}
+
+@keyframes topdown{
+    0%{
+        opacity: 0;
+        transform: translateY(150px) scale(0.1); 
+    }
+
+    100%{
+        opacity: 1;
+        transform: translateY(0) scale(1);
+    }
+    
+}
+
+@keyframes driveCookie{
+    0%{
+        transform: translateX(-4px);
+    }
+
+    25%{
+        transform: translateY(-4px);
+    }
+
+    50%{
+        transform: translateY(4px);
+    }
+
+    100%{
+        transform: translateY(0);
+    }
+}
+
+@keyframes gradient {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
 }
