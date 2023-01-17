@@ -13,6 +13,10 @@
     <script src="script.js" defer></script>
 </head>
 <body>
+    <div class="alert-error">
+        Digite somente números
+    </div>
+
     <div class="container">
         <main class="card">
             <form>
@@ -22,17 +26,22 @@
                     <input 
                         placeholder="60"
                         id="weight" 
-                        type="text"/>
+                        type="text"
+                        required />
                 </div>
+
                 <div class="input-wrapper">
                     <label for="height">Altura (m)</label>
                     <input 
                         placeholder="165"
                         id="height" 
-                        type="text"/>
+                        type="text"
+                        required />
                 </div>
+
                 <button type="submit">
                     Calcular IMC
+                    <img src="assets/arrow.svg" alt="">
                 </button>
             </form>
         </main>
@@ -41,8 +50,10 @@
     <div class="modal-wrapper">
         <div class="modal card">
             <h2 class="title">
-                <button class="close">Fechar</button>
-                Seu IMC é de 28.
+                <button class="close">
+                    <img src="assets/close.svg" alt="imagem para fechar o popup">
+                </button>
+                <span>Seu IMC é de 28.</span>
             </h2>
         </div>
     </div>

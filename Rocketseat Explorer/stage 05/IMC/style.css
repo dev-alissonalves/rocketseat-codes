@@ -106,6 +106,7 @@ form button{
     color: var(--tt-button);
 
     display: flex;
+    gap: 1.2rem;
     align-items: center;
     justify-content: center;
 
@@ -116,20 +117,22 @@ form button:hover{
     background: var(--bg-button-hover);
 }
 
-/* */
-
-.modal-wrapper.open{
-    opacity: 1;
-    visibility: visible;
-}
+/* MODAL / POP-UP*/
 .modal-wrapper{
     display: grid;
     place-content: center;
     position: absolute;
-    inset: 0;
+    inset: 0;    
+    
     background: rgba(0,0,0,0.7);
+
     opacity: 0;
     visibility: hidden;
+}
+
+.modal-wrapper.open{
+    opacity: 1;
+    visibility: visible;
 }
 
 .modal{
@@ -139,7 +142,40 @@ form button:hover{
     cursor: pointer;
     background: none;
     border: none;
+
     position: absolute;
     top: 1.6rem;
     right: 1.6rem;
+    transition: transform .3s;
+}
+
+.modal button:hover{
+    transform: scale(1.2);
+}
+
+/* ALERT ERROR */
+
+.alert-error{
+    font-weight: bold;
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    text-align: center;
+    padding: .8rem 0;
+
+    color: var(--tt-error);
+    background-color: var(--bg-error);
+
+    visibility: hidden;
+    opacity: 0;
+
+    transform: translateY(-30px);
+    transition: transform .5s;
+}
+
+.alert-error.open{
+    visibility: visible;
+    opacity: 1;
+    transform: translateY(0);
 }
