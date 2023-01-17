@@ -92,7 +92,7 @@ form input::placeholder{
     margin-top: 1.6rem;
 }
 
-button{
+form button{
     cursor: pointer;
     font-weight: bold;
     border: none;
@@ -112,6 +112,34 @@ button{
     transition: background .2s;
 }
 
-button:hover{
+form button:hover{
     background: var(--bg-button-hover);
+}
+
+/* */
+
+.modal-wrapper.open{
+    opacity: 1;
+    visibility: visible;
+}
+.modal-wrapper{
+    display: grid;
+    place-content: center;
+    position: absolute;
+    inset: 0;
+    background: rgba(0,0,0,0.7);
+    opacity: 0;
+    visibility: hidden;
+}
+
+.modal{
+    position: relative;
+}
+.modal button{
+    cursor: pointer;
+    background: none;
+    border: none;
+    position: absolute;
+    top: 1.6rem;
+    right: 1.6rem;
 }
