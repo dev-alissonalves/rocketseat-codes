@@ -1,16 +1,9 @@
+import { Modal } from "./modal.js"
+import { alertError } from "./alert-error.js"
+
 const form = document.querySelector("form")
 const inputWeight = document.querySelector("#weight")
 const inputHeight = document.querySelector("#height")
-
-// Estrutura responsável por controlar os atributos e os estados do Modal
-const Modal = {
-    wrapper: document.querySelector(".modal-wrapper"),
-    message: document.querySelector(".modal .title span"),
-    buttonClose: document.querySelector(".modal button.close"),
-
-    open(){ Modal.wrapper.classList.add("open") },
-    close(){ Modal.wrapper.classList.remove("open") }
-}
 
 //Anonymous function
 form.onsubmit = function (event){
@@ -18,6 +11,16 @@ form.onsubmit = function (event){
 
     const weight = inputWeight.value;
     const height = inputHeight.value;
+
+    const showAlertError = notANumber(weight) || notANumber(height)
+
+    if(showAlertError){
+        alertError.open()
+        return;
+    }
+    
+    alertError.close()
+
     const result = IMC(weight, height)
 
     const message = ` Seu IMC é de ${result}`
@@ -25,8 +28,10 @@ form.onsubmit = function (event){
     Modal.open()
 }
 
-Modal.buttonClose.onclick = () => Modal.close()
-
 function IMC(weight, height){
     return (weight / ((height / 100) ** 2)).toFixed(2) 
+}
+
+function notANumber(value){
+    return isNaN(value) || value == ""
 }
