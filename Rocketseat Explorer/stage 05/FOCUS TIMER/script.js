@@ -70,16 +70,6 @@ buttonStop.addEventListener("click", function(){
     resetTimer()
 })
 
-buttonSoundOn.addEventListener("click", function(){
-    buttonSoundOn.classList.add("hide")
-    buttonSoundOff.classList.remove("hide")
-})
-
-buttonSoundOff.addEventListener("click", function(){
-    buttonSoundOn.classList.remove("hide")
-    buttonSoundOff.classList.add("hide")
-})
-
 buttonSet.addEventListener("click", function(){
     let newMinutes = prompt("Quantos minutos?")
     
@@ -91,3 +81,14 @@ buttonSet.addEventListener("click", function(){
     minutes = newMinutes
     updateTimerDisplay(minutes, 0)
 })
+
+buttonSoundOn.addEventListener("click", function(){
+    buttonSoundOn.classList.add("hide")
+    buttonSoundOff.classList.remove("hide")
+})
+
+buttonSoundOff.addEventListener("click", function(){
+    buttonSoundOn.classList.remove("hide")
+    buttonSoundOff.classList.add("hide")
+})
+
