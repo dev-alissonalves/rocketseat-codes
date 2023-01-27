@@ -1,4 +1,4 @@
-export function Controls ({ 
+export default function Controls ({ 
         buttonStop, 
         buttonSet, 
         buttonPlay, 
@@ -27,11 +27,9 @@ export function Controls ({
 
     function getMinutes(){
         let newMinutes = prompt("Quantos minutos?")
-    
         if(!newMinutes){
             return false
         }
-        
         return newMinutes
     }
 

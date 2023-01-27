@@ -1,13 +1,18 @@
-export function Timer({ 
+import Sounds from "./sounds.js";
+
+export default function Timer({ 
     minutesDisplay, 
     secondsDisplay, 
-    timerTimeout, 
     resetControls
 })
 {
+    let timerTimeout;
+    let minutes = Number(minutesDisplay.textContent)
 
-    function updateDisplay(minutes, seconds){
-        minutesDisplay.textContent = String(minutes).padStart(2, "0")
+    function updateDisplay(newMinutes, seconds){
+        newMinutes = newMinutes === undefined ? minutes : newMinutes 
+        seconds = seconds || 0
+        minutesDisplay.textContent = String(newMinutes).padStart(2, "0")
         secondsDisplay.textContent = String(seconds).padStart(2, "0")
     }
 
@@ -17,15 +22,17 @@ export function Timer({
     }
        
     function countdown(){  
-        
         timerTimeout = setTimeout(function(){
             let seconds = Number(secondsDisplay.textContent)
             let minutes = Number(minutesDisplay.textContent)  
-    
+            let isFinished = minutes <= 0 && seconds <= 0
+            
             updateDisplay(minutes, 0)
     
-            if(minutes <= 0){
+            if(isFinished){
                 resetControls()
+                updateDisplay()
+                Sounds().timeEnd()
                 return
             } 
             
@@ -39,9 +46,19 @@ export function Timer({
         }, 1000)
     }
 
+    function updateMinutes(newMinutes){
+        minutes = newMinutes
+    }
+
+    function hold(){
+        clearTimeout(timerTimeout)
+    }
+
     return {
         countdown,
         reset,
-        updateDisplay
+        updateDisplay,
+        updateMinutes,
+        hold
     }
 }
