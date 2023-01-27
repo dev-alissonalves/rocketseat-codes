@@ -1,4 +1,10 @@
-export function Controls({ buttonStop, buttonSet, buttonPlay, buttonPause }){
+export function Controls ({ 
+        buttonStop, 
+        buttonSet, 
+        buttonPlay, 
+        buttonPause 
+    })
+{
     
     function play(){
         buttonPlay.classList.add("hide")

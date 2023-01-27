@@ -1,4 +1,10 @@
-export function Timer({ minutesDisplay, secondsDisplay, timerTimeout, resetControls}){
+export function Timer({ 
+    minutesDisplay, 
+    secondsDisplay, 
+    timerTimeout, 
+    resetControls
+})
+{
 
     function updateDisplay(minutes, seconds){
         minutesDisplay.textContent = String(minutes).padStart(2, "0")
@@ -34,8 +40,8 @@ export function Timer({ minutesDisplay, secondsDisplay, timerTimeout, resetContr
     }
 
     return {
-        reset,
         countdown,
+        reset,
         updateDisplay
     }
 }
