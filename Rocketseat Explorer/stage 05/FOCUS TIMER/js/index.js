@@ -64,12 +64,12 @@ buttonSet.addEventListener("click", function(){
 buttonSoundOn.addEventListener("click", function(){
     buttonSoundOn.classList.add("hide")
     buttonSoundOff.classList.remove("hide")
-    sound.bgAudioStart().play()
+    sound.bgAudioPause().pause()
 })
 
 buttonSoundOff.addEventListener("click", function(){
     buttonSoundOn.classList.remove("hide")
     buttonSoundOff.classList.add("hide")
-    sound.bgAudioPause().pause()
+    sound.bgAudioStart().play()
 })
 
