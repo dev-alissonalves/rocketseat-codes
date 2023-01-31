@@ -1,0 +1,46 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    font-size: 62.5%;
+}
+
+body{
+    font-size: 1.6rem;
+}
+
+main{
+    display: grid;
+    min-height: 100vh;
+}
+.container{
+    display: flex;
+    align-self: center;
+    justify-self: center;
+    align-items: center;
+    gap: 20rem;
+}
+
+.pomodoro{
+    width: 32rem;
+    text-align: center;
+    font-size: 10rem;
+}
+
+.control_sounds{
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+}
+
+.col-2 :nth-child(2){
+    margin-left: 3rem;
+}
+button{
+    background-color: transparent;
+    border: none;
+    cursor: point;
+}
