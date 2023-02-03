@@ -44,5 +44,5 @@ main{
 button{
     background-color: transparent;
     border: none;
-    cursor: point;
+    cursor: pointer;
 }
