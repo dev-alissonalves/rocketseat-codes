@@ -4,12 +4,14 @@ const btnAddTime = document.querySelector(".addTime")
 const btnSlowDownTime = document.querySelector(".slowDownTime")
 const minutesDisplay = document.querySelector(".minutes")
 const secondsDisplay = document.querySelector(".seconds")
-//events
 
+
+//events
 btnPlay.addEventListener('click', playPomodoro)
 btnPause.addEventListener('click', pausePomodoro)
 btnAddTime.addEventListener('click', addTimePomodoro)
 btnSlowDownTime.addEventListener('click', slowDownTimePomodoro)
+
 
 //Functions
 function playPomodoro(){
