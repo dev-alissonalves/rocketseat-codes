@@ -1,0 +1,99 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    font-size: 62.5%;
+}
+
+body {
+    font-size: 1.6rem;
+    display: grid;
+    place-items: center;
+    height: 100vh;
+    background: radial-gradient(circle, rgba(10,9,121,1) 0%, rgba(60, 51, 235, 0.234) 0%, rgba(0, 213, 255, 0.367) 100%);
+}
+
+body, button, input{
+    font-family: "DM Sans", sans-serif;
+}
+
+main {
+    background: #FFFFFF;
+    box-shadow: 0 .2rem .4rem rgba(0, 0, 0, 0.1);
+    border-radius: .6rem;
+    padding: 4.8rem 6.4rem 6.4rem;
+
+    width: min(80rem, 90%);
+    height: 30rem;
+    margin: 0 auto;
+    text-align: center;
+}
+
+button{
+    background-color: #7879F1;
+    color: white;
+    font-weight: bold;
+    border-radius: 0 .4rem .4rem 0;
+    cursor: pointer;
+    transition: background .3s;
+}
+
+button:hover{
+    background-color: #7878f1d5;
+}
+
+/*SCREEN 1*/
+.hide{
+    display: none;
+}
+h1{
+    font-family: "Montserrat", sans-serif;
+    font-size: 5rem;
+    margin-bottom: 1.6rem;
+
+}
+
+p{
+    font-size: 2.5rem;
+    opacity: .8;
+}
+
+h1, p{
+    color: #34355B;
+}
+
+form{
+    display: flex;
+    margin-top: 4.8rem;
+    justify-content: center;
+}
+
+input{
+    background-color: #DCE2E9;
+    width: 7.5rem;
+    border-radius: .4rem 0 0 .4rem;
+}
+
+input, button{
+    border: none;
+    padding: 1.6rem;
+    font-size: 2rem;
+}
+
+
+/*SCREEN 2*/
+
+h2{
+    font-size: 5rem;
+    font-weight: normal;
+    margin-bottom: 4rem;
+}
+
+.screen2 button {
+    font-size: 2rem;
+    border-radius: .4rem;
+    padding: 2rem 4rem;
+}

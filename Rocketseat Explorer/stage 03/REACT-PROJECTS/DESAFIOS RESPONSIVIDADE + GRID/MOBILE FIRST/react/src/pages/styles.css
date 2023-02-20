@@ -1,0 +1,205 @@
+body{
+    font-family: 'Staatliches', cursive;
+}
+
+.page-mobile{
+    min-width: 460px;
+    margin: 0 auto;
+    text-align: center;
+    background: #EFF1FF;
+}
+
+header{
+    height: 33rem;
+    background: #8E9AAF;
+}
+
+header img{
+    margin: 3rem 0 3rem;
+    animation: rota 2s linear infinite;
+}
+
+header h1{
+    margin-bottom: 3rem;    
+    background: #CBC0D3;
+    text-transform: uppercase;
+    font-weight: 400;
+    font-size: 40px;
+    letter-spacing: 0.05em;
+    color: #FFFFFF;
+    text-shadow: 0px 2px 2px rgba(0, 0, 0, 0.25);
+}
+
+header p{
+    padding: 5rem 6rem;
+    font-family: 'Palanquin', sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 1.5rem;
+    line-height: 2rem;
+    color: #23053A;
+}
+
+.card-group{
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+    margin-top: 25rem;
+}
+
+.card{
+    position: relative;
+    margin: auto;
+}
+
+.card img{
+    width: 100%;
+    animation: downtop 800ms;
+    transition: all 350ms
+}
+
+.card img:hover{
+    transform: scale(1.1);
+    opacity: 0.8;
+    transition: all 350ms;
+}
+
+.card h2{
+    position: absolute;
+    top: 1.5rem;
+    right: 2.5rem;
+    padding: 0.2rem 3rem;
+    border-radius: 20px;
+
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 34px;
+    letter-spacing: 0.05em;
+
+    color: #4A4E69;
+    background: #FEEAFA;
+    animation: topdown 500ms 500ms backwards;
+    
+}
+
+footer{
+    padding: 2.3rem 0;
+    font-size: 2rem;
+    letter-spacing: 2px;
+}
+
+@media (min-width: 750px) {
+
+    .card-group{
+        margin-top: 15rem;
+        padding: 5rem;
+        display: grid;
+        justify-content: center;
+        grid-template-areas: 
+        'A B C'
+        'D B E'
+        'D F E';
+    }
+
+    .card-group .card:nth-child(1){
+        grid-area: A;
+    }
+
+    .card-group .card:nth-child(2){
+        grid-area: B;
+    }
+
+    .card-group .card:nth-child(3){
+        grid-area: C;
+    }
+
+    .card-group .card:nth-child(4){
+        grid-area: D;
+    }
+
+    .card-group .card:nth-child(5){
+        grid-area: F;
+    }
+
+    .card-group .card:nth-child(6){
+        grid-area: E;
+    }
+}
+
+@media(min-width: 1200px){
+    .page-mobile{
+        display: flex;
+        align-items: center;
+    }
+
+    .card-group{
+        margin: 0;
+        width: 70vw;
+        padding: 4rem 4rem;
+    }
+
+    main{
+        margin: 0 auto;
+    }
+    
+    header{
+        width: 25%;
+        height: 100vh;
+    }
+
+    header img{
+        padding: 1rem;
+    }
+
+    header p{
+        font-size: 1.8rem;
+        line-height: 30px;
+    }
+
+    main{
+        margin: 0;
+        padding: 0;
+        width: 70vw;
+    }
+}
+
+
+@keyframes rota{
+    0%{
+        transform: rotate(0);
+    }
+
+    50%{
+        transform: rotate(180deg);
+    }
+    
+    100%{
+        transform: rotate(360deg);
+    }
+}
+
+@keyframes topdown{
+    0%{
+        opacity: 0;
+        transform: translateY(-15px)
+    }
+
+    100%{
+        opacity: 1;
+        transform: translateY(0);
+    }
+    
+}
+
+@keyframes downtop{
+    0%{
+        opacity: 0;
+        transform: translateY(15px)
+    }
+
+    100%{
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
